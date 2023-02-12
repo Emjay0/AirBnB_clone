@@ -40,7 +40,7 @@ class TestCodeFormat(unittest.TestCase):
         """test pep8 base.py"""
         pep8style = pep8.StyleGuide(quiet=True)
         result = pep8style.check_files(['models/review.py'])
-        elf.assertEqual(result.total_errors, 0)
+        self.assertEqual(result.total_errors, 0)
 
     def test_pep8_place(self):
         """test pep8 base.py"""
