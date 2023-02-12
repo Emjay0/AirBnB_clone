@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """command line interpreter"""
 import cmd
+import os
+import sys
+import json
 import shlex
 from datetime import datetime
 from models.base_model import BaseModel
