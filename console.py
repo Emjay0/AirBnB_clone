@@ -19,8 +19,9 @@ from models import storage
 class HBNBCommand(cmd.Cmd):
     """CLI"""
     prompt = '(hbnb) '
-    class_name = ['BaseModel', 'User', 'State',
-                  'City', 'Amenity', 'Place', 'Review']
+    class_name = {'BaseModel': Basemodel, 'User': User, 'State': State,
+                  'City': City, 'Amenity': Amenity, 'Place': Place,
+                  'Review': Review}
 
     def emptyline(self):
         """do not execute last command with empty line"""
