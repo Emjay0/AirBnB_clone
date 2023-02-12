@@ -15,7 +15,7 @@ from models import storage
 
 class HBNBCommand(cmd.Cmd):
     """CLI"""
-    prompt = '(hbnb)'
+    prompt = '(hbnb) '
     class_name = ['BaseModel', 'User', 'State',
                   'City', 'Amenity', 'Place', 'Review']
 
